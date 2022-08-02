@@ -24,3 +24,31 @@ tile_data = PoolIntArray(
 - `mapXY`     = (x + y * 65536)
 - `tileSetID` = 0
 - `tileSetUV` = (u + v * 65536)
+  
+
+## 分辨率
+- `mode`
+  - `disable` 禁止缩放
+  - `2d`      像素缩放(模糊)
+  - `vieport` `viewport`缩放 最好使用这种
+- `aspect`
+  - `ignore`        缩放适应屏幕
+  - `keep`          保持长款比
+  - `keep width`    
+  - `keep height`
+  - `expand`        最好
+- `shrink`
+  - 缩放大小 
+  - 4
+
+## 项目设置
+```
+size
+    width  = 1024
+    height = 960
+
+stretch
+    mode    = viewport
+    aspect  = expand
+    shrink  = 4
+```
